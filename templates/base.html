@@ -1,6 +1,6 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +10,16 @@
         <meta name="author" content="Rabie Elkheir">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
         <!-- Owl Carousel Assets -->
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  type="text/css" />
 
         <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,700|Roboto:300,400,500,700,900|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
         <!-- Main CSS -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
         <!-- Responsive CSS -->
-        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +43,7 @@
                     	<i class="fa fa-close"></i>
                     </a>
                     <div id="logo">
-                        <a href="01-home.html"><img src="img/logo.png" alt=""></a>
+                        <a href="01-home.html"><img src="{% static 'img/logo.png' %}" alt=""></a>
                     </div>
                 </div><!-- // col-md-2 -->
                 <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs hidden-sm">
@@ -70,28 +70,28 @@
                               <ul class="dropdown-menu dropdown-menu-friend-requests ">
                                 <li>
                                 	<div class="friend-requests-info">
-                                        <div class="thumb"><a href="#"><img src="demo_img/z1.jpg" alt=""></a></div>
+                                        <div class="thumb"><a href="#"><img src="{% static 'demo_img/z1.jpg' %}" alt=""></a></div>
                                         <a href="#" class="name">Ahmed Saleh </a>
                                         <span>Ahmed Saleh : Follow you now</span>
                                     </div>
                                 </li>
                                 <li>
                                 	<div class="friend-requests-info">
-                                        <div class="thumb"><a href="#"><img src="demo_img/z2.jpg" alt=""></a></div>
+                                        <div class="thumb"><a href="#"><img src="{% static 'demo_img/z2.jpg' %}" alt=""></a></div>
                                         <a href="#" class="name">Ahmed Saleh </a>
                                         <span>Ahmed Saleh : Follow you now</span>
                                     </div>
                                 </li>
                                 <li>
                                 	<div class="friend-requests-info">
-                                        <div class="thumb"><a href="#"><img src="demo_img/z3.jpg" alt=""></a></div>
+                                        <div class="thumb"><a href="#"><img src="{%static 'demo_img/z3.jpg'%}" alt=""></a></div>
                                         <a href="#" class="name">Ahmed Saleh </a>
                                         <span>Ahmed Saleh : Follow you now</span>
                                     </div>
                                 </li>
                                 <li>
                                 	<div class="friend-requests-info">
-                                        <div class="thumb"><a href="#"><img src="demo_img/z4.jpg" alt=""></a></div>
+                                        <div class="thumb"><a href="#"><img src="{% static 'demo_img/z4.jpg' %}" alt=""></a></div>
                                         <a href="#" class="name">Ahmed Saleh </a>
                                         <span>Ahmed Saleh : Follow you now</span>
                                     </div>
@@ -172,7 +172,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs hidden-sm">
 					  <div class="dropdown">
                         <a data-toggle="dropdown" href="#" class="user-area">
-                            <div class="thumb"><img src="demo_img/user-1.png" alt=""></div>
+                            <div class="thumb"><img src="{% static 'demo_img/user-1.png' %}" alt=""></div>
                             <h2>Rabie Elkheir</h2>
                             <h3>25 subscribers</h3>
                             <i class="fa fa-angle-down"></i>
@@ -249,80 +249,14 @@
             </div><!-- // left-sidebar -->
         </div><!-- // col-md-2 -->
 
-
-
-        <div id="all-output" class="col-md-10">
-            <!-- Category Cover Image -->
-            <div id="category-cover-image">
-            	<div class="image-in">
-                	<img src="demo_img/category-img.jpg" alt="">
-                </div>
-            	<h1 class="title"><i class="fa fa-music"></i> Music</h1>
-                <ul class="category-info">
-                	<li>97,174,199 subscribers </li>
-                	<li>255,525,456 Views</li>
-                	<li>45,23,65 Channel No</li>
-                	<li class="subscribe"><a href="#">Subscribe</a></li>
-                </ul>
-            </div>
-            <!-- // Category Cover Image -->
-
-            <!-- category -->
-            <div id="category">
-            	<div class="row">
-                    <div class="col-md-2">
-                        <ul class="category-menu">
-                            <li><a href="02-category.html">Home</a></li>
-                            <li><a href="03-category_videos.html">videos</a></li>
-                            <li><a href="04-category_chanels.html">Chanels</a></li>
-                            <li><a href="05-category_playlists.html">playlists</a></li>
-                            <li class="active"><a href="06-category_about.html">about</a></li>
-                        </ul>
-
-                        <div class="share-in">
-                        	<h1 class="title">Share in</h1>
-                            <ul class="social-link">
-                            	<li class="facebook"><a href="#"><i class="fa fa-facebook"></i> 11200 </a></li>
-                            	<li class="twitter"><a href="#"><i class="fa fa-twitter"></i> 514 </a></li>
-                            	<li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i> 514 </a></li>
-                            	<li class="vimeo"><a href="#"><i class="fa fa-vimeo"></i> 155 </a></li>
-                            </ul>
-                        </div>
-
-                        <div class="advertising-block">
-                        	<h1 class="title">Advertising</h1>
-                            <div class="advertising-code">
-                            	<a href="#"><img src="demo_img/adv.jpg" alt=""></a>
-                            </div>
-                        </div>
-
-                    </div><!-- // col-md-2 -->
-
-                    <div class="col-md-10">
-
-                        <div class="about-category">
-
- consectadipisicing elit, sed do eiusmod por incidid ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud lorem exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis en aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi hitecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </div><!-- // about-category -->
-
-
-                    </div>
-
-
-                </div><!-- // row -->
-            </div>
-            <!-- // category -->
-
-		</div>
+        {% block content %}{% endblock content %}
       </div>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/jquery.sticky-kit.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/grid-blog.min.js"></script>
 
-
-
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/jquery.sticky-kit.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'js/grid-blog.min.js' %}"></script>
+	</body>
 </html>
