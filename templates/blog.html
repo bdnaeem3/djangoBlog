@@ -140,162 +140,23 @@
 
                 <div id="blog">
                     <div class="row posts  masonry-container">
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <img src="{% static 'demo_img/blog-1.png' %}" alt="">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
+
+                        {% for blog in blogs %}
+                            <div class="col-sm-6 item">
+                                <div class="thumbnail">
+                                    <img src="{% static 'demo_img/blog-1.png' %}" alt="">
+                                    <div class="caption">
+                                        <p>
+                                            <a href="{{ blog.slug }}">{{ blog.title }}</a></p>
+                                        <ul class="list-unstyled">
+                                            <li>By : <a href="">Rabie Alkheir</a></li>
+                                            <li>Date : {{ blog.publish_date }}</li>
+                                        </ul>
+                                        <p>{{ blog.content }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <img src="{% static 'demo_img/blog-2.png' %}" alt="">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail link-post">
-                                <div class="header">
-                                    <ul class="list-unstyled">
-                                        <li><i class="fa fa-link"></i></li>
-                                        <li>
-                                            <a href="">www.themeforest.net</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <img src="{% static 'demo_img/blog-3.png' %}" alt="">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail player-post">
-                                <div class="header">
-                                    <ul class="list-unstyled">
-                                        <li><i class="fa fa-backward"></i></li>
-                                        <li><i class="fa fa-play"></i></li>
-                                        <li><i class="fa fa-forward"></i></li>
-                                        <li><i class="fa fa-repeat"></i></li>
-                                        <li><i class="fa fa-random"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <img src="{% static 'demo_img/blog-5.png' %}" alt="">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail video-post">
-                                <div class="header">
-                                    <a href=""><i class="fa fa-youtube-play"></i></a>
-                                    <img src="{% static 'demo_img/blog-4.png' %}" alt="">
-                                </div>
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <img src="{% static 'demo_img/blog-5.png' %}" alt="">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 item">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                    <p>
-                                        <a href="">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod </a></p>
-                                    <ul class="list-unstyled">
-                                        <li>By : <a href="">Rabie Alkheir</a></li>
-                                        <li>Date : July 15,2016</li>
-                                    </ul>
-                                    <p>Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. Maecenas quis magna faucibus, varius ante sit amet. Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. </p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
 
                     </div>
 
